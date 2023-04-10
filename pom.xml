@@ -46,10 +46,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-gateway</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -118,7 +118,7 @@
 					</from>
 					<to>
 						<image>registry.hub.docker.com/pblgllgs/cloudgateway-dcb</image>
-						<tags>${project.version}</tags>
+						<tags>${project.version}-k8s</tags>
 					</to>
 				</configuration>
 			</plugin>
